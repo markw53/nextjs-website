@@ -143,6 +143,7 @@ export default function ContactPage() {
                       className="w-full px-4 py-2 rounded-md border border-input bg-background"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      placeholder="Enter your name"
                     />
                   </div>
                   <div>
@@ -150,6 +151,8 @@ export default function ContactPage() {
                     <input
                       type="email"
                       required
+                      title="Email"
+                      placeholder="Enter your email"
                       className="w-full px-4 py-2 rounded-md border border-input bg-background"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -161,6 +164,8 @@ export default function ContactPage() {
                   <label className="block text-sm font-medium mb-2">Phone (Optional)</label>
                   <input
                     type="tel"
+                    title="Phone"
+                    placeholder="Enter your phone number"
                     className="w-full px-4 py-2 rounded-md border border-input bg-background"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -172,6 +177,8 @@ export default function ContactPage() {
                   <input
                     type="text"
                     required
+                    title="Subject"
+                    placeholder="Enter the subject"
                     className="w-full px-4 py-2 rounded-md border border-input bg-background"
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
@@ -182,6 +189,8 @@ export default function ContactPage() {
                   <label className="block text-sm font-medium mb-2">Message</label>
                   <textarea
                     required
+                    title="Message"
+                    placeholder="Enter your message"
                     rows={6}
                     className="w-full px-4 py-2 rounded-md border border-input bg-background"
                     value={formData.message}
